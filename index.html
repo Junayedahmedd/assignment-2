@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header with Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MY Tree</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Carousel -->
+<section id="carousel" class="pt-5 mt-5">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/WhatsApp Image 2024-11-12 at 10.36.16_06d1f957.jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>sajani tree</h5>
+        
+          <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/WhatsApp Image 2024-11-12 at 10.36.15_69711909.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>rajani tree</h5>
+         
+          <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/WhatsApp Image 2024-11-12 at 10.36.16_38b2eb4f.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>cristmass tree</h5>
+          
+          <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Responsive Grid System for Content Layout -->
+<section class="container my-5">
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="img/WhatsApp Image 2024-11-12 at 10.36.14_690641ac.jpg" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title">Card Title 1</h5>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="img/WhatsApp Image 2024-11-12 at 10.36.14_690641ac.jpg" class="card-img-top" alt="Image 2">
+        <div class="card-body">
+          <h5 class="card-title">Card Title 2</h5>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="img/WhatsApp Image 2024-11-12 at 10.37.57_da3da6a4.jpg" class="card-img-top" alt="Image 3">
+        <div class="card-body">
+          <h5 class="card-title">Card Title 3</h5>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="img/WhatsApp Image 2024-11-12 at 10.36.15_91fb6414.jpg" alt="About Image">
+    </div>
+    <div class="col-md-6">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati tempora error iusto id ducimus ullam adipisci impedit ab nihil..</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="container my-5">
+  <h2>Contact Us</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-4">
+  <div class="container text-center">
+    <p>Follow us on:</p>
+    <a href="#" class="text-primary me-3"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="text-primary me-3"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="text-primary me-3"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
